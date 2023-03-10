@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/bkmoises/nodeJS-clean-tdd-study/issues"
   },
-  "homepage": "https://github.com/bkmoises/nodeJS-clean-tdd-study#readme"
+  "homepage": "https://github.com/bkmoises/nodeJS-clean-tdd-study#readme",
+  "devDependencies": {
+    "git-commit-msg-linter": "^4.9.2"
+  }
 }
