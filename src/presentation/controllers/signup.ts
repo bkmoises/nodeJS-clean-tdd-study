@@ -2,10 +2,7 @@ import type { HttpResponse, HttpRequest } from '../protocols/http'
 import { MissingParamError } from '../errors/missing-param-error'
 import { badRequest } from '../helpers/http-helper'
 
-const returnError: HttpResponse = {
-  statusCode: 555,
-  body: {}
-}
+const returnError = badRequest(new Error())
 
 export class SignUpController {
   handle (httpRequest: HttpRequest): HttpResponse {
