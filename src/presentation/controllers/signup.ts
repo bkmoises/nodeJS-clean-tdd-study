@@ -1,8 +1,6 @@
 import { badRequest, serverError } from '../helpers/http-helper'
 import { MissingParamError, InvalidParamError } from '../errors'
-import type { HttpResponse, HttpRequest } from '../protocols/http'
-import type { Controller } from '../protocols/controller'
-import type { EmailValidator } from '../protocols/email-validator'
+import type { HttpResponse, HttpRequest, Controller, EmailValidator } from '../protocols'
 
 const returnError = badRequest(new Error('Mock Error'))
 
